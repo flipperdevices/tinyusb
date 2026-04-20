@@ -58,6 +58,9 @@ TU_ATTR_UNUSED static void Error_Handler(void) {
   #elif UART_ID == 3
     #define USARTn            USART3
     #define UARTn_CLK_ENABLE  __HAL_RCC_USART3_CLK_ENABLE
+  #elif UART_ID == 6
+    #define USARTn            USART6
+    #define UARTn_CLK_ENABLE  __HAL_RCC_USART6_CLK_ENABLE
   #elif UART_ID == 11
     #define USARTn            LPUART1
     #define UARTn_CLK_ENABLE  __HAL_RCC_LPUART1_CLK_ENABLE
